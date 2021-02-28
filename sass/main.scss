@@ -1,0 +1,55 @@
+/*roots*/
+@import "./utils/variables";
+
+/*base 0*/
+@import "./base/common";
+
+/*base of conteiner*/
+@import "./base/conteiner";
+
+/*visually-hidden*/
+@import "./utils/visually-hidden";
+
+/*mixins-utils*/
+
+@import "./utils/mixins";
+
+/*all components*/
+@import "./components/components-list-link";
+@import "./components/components-title";
+
+/*header*/
+@import "./layout/header";
+
+/*hero*/
+@import "./layout/hero";
+
+/*about-us*/
+@import "./layout/about-us";
+
+/*what we do*/
+@import "./layout/what-we-do";
+
+/*comanda*/
+@import "./layout/comanda";
+
+/*our-clients*/
+@import "./layout/our-clients";
+
+/*footer*/
+@import "./layout/footer";
+
+/*header-portfolio*/
+@import "./layout/header-portfolio";
+
+/*portfolio-buttons*/
+@import "./layout/portfolio-buttons";
+
+/*portfolio*/
+@import "./layout/portfolio-examples";
+
+/*modal-window*/
+@import "./components/modal-window";
+
+/*form-in-footer*/
+@import "./components/form-in-footer";

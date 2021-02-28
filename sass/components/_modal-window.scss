@@ -1,0 +1,190 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0.75) translate(-50%, -50%);
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 581px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1) translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+      fill: var(--accent-color);
+}
+/*.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: var(--accent-color);
+}*/
+
+
+.modal-form-input-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: var(--text-color); 
+  
+ &:last-of-type {
+  margin-bottom: 25px; }
+  
+ &:not(:first-child) {
+  margin-top: 10px; }
+  
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 4px;
+  &:focus 
+  outline: none;
+  border-color: var(--accent-color);
+}
+.modal-form-input-svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-input:focus + .modal-form-input-svg {
+  fill: var(--accent-color);
+}
+.modal-form-input-wrapper {
+  display: block;
+  position: relative;
+}
+/*.modal-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}*/
+
+.modal-form-messege {
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  width: 100%;
+  height: 120px;
+  display: block;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 12px 16px;
+  margin-top: 4px;
+  &:focus 
+  outline: none;
+  border-color: var(--accent-color)
+}
+/*.modal-form-messege:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}*/
+
+.modal-form-check-policy:checked + .modal-form-label-policy::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/iconcheck.svg);
+}
+.modal-form-check-policy:focus + .modal-form-label-policy::before {
+  border-color: var(--accent-color);
+}
+
+.modal-form-label-policy {
+  @include align-center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 1.171;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  &::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 7px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+      
+.p-in-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+.button-submit,
+.button-submit-foot {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  align-self: center;
+  width: 200px;
+  height: 50px;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.agriment {
+  color: var(--accent-color);
+}

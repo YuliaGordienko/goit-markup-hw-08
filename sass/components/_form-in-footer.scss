@@ -1,0 +1,37 @@
+.form-footer {
+  display: flex;
+  margin-left: auto;
+}
+
+.p-for-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--white-color);
+}
+.button-submit-foot {
+  margin-left: 12px;
+}
+.modal-form-input-footer {
+  width: 358px;
+  height: 50px;
+  background-color: var(--background-color-grey);
+  color: var(--white-color);
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+}
+.button-submit-foot {
+  @include center;
+}
+.button-submit-foot-svg {
+  margin-left: 10px;
+}
+.conteiner-foot {
+  margin-left: auto;
+}

@@ -1,0 +1,84 @@
+.footer-adress,
+.footer-contacts {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  background-color: var(--background-color-grey);
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-span-foot {
+  color: var(--white-color);
+}
+
+.footer-contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
+.logotypefoot {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.title-social-list-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.social-link-svg-footer {
+  fill: #ffffff;
+}
+.social-list-link-footer {
+  @include center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer .conteiner {
+  display: flex;
+  align-items: baseline;
+}
+
+.social-list-footer {
+  display: flex;
+}
+.conteiner-footer {
+  margin-right: 70px;
+}
+.conteiner-foot {
+  margin-right: 93px;
+}
+
+.social-list-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+.mail-foot,
+.tel-foot {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+  }
+}

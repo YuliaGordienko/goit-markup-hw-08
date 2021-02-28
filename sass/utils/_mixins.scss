@@ -1,0 +1,9 @@
+@mixin center($df: flex, $ai: center, $jc: center) {
+  display: $df;
+  align-items: $ai;
+  justify-content: $jc;
+}
+@mixin align-center($df: flex, $ai: center) {
+  display: $df;
+  align-items: $ai;
+}
