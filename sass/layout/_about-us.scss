@@ -6,7 +6,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .list-about-us-discription {
   font-family: "Roboto", sans-serif;
@@ -15,10 +17,42 @@
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  max-width: 270px;
+  max-width: 480px;
+  min-width: 320px;
+}
+.list-about-us-discription {
+  margin-bottom: 30px;
+}
+.about-us {
+  padding: 60px 0px;
+}
+.about-us-ikon-div {
+  background-color: #f5f4fa;
+  @include center;
+  max-width: 480px;
+  min-width: 320px;
+  height: 120px;
 }
 
-.about-us .conteiner {
+@media screen and (min-width: 768px) {
+  .about-us-ikon-div {
+    background-color: #f5f4fa;
+    @include center;
+    max-width: 354px;
+    height: 120px;
+  }
+  .wrapper-about-us {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list-about-us-discription {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+}
+
+/*.about-us .conteiner {
   @include align-center;
 }
 .about-us {
@@ -41,4 +75,4 @@
 
 .about-us-list:not(:last-child) {
   margin-right: 30px;
-}
+}*/

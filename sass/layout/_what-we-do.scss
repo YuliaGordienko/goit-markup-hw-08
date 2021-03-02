@@ -33,3 +33,10 @@
 .what-we-do-wrapper {
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .what-we-do-section {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+}
