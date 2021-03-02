@@ -16,42 +16,63 @@
 <body>
     <!-- Шапка сайта -->
     <header class="header">
-        <div class="conteiner">
-        <nav class="navigation">
+      <div class="conteiner">
+      <nav class="navigation">
+        <a class="logotype logotype-header" href="./"> <span class="logo-span">Web</span>Studio</a>
+        <ul class="navigation-list lists">
+          <li class="navigation-list-item before-element"><a class="navigation-list-links before-element-link" href=""> <span class="navigation-list-link-mark">Студия</span> </a></li>
+          <li class="navigation-list-item"><a class="navigation-list-links" href="./portfolio.html"> Портфолио </a></li>
+          <li class="navigation-list-item"><a class="navigation-list-links" href=""> Контакты </a></li>
+        </ul>
+      </nav>
+      <ul class="contacts-list lists">
+        <li class="contacts-list-item"> 
+          <a href="mailto:info@devstudio.com" class="contacts-list-mail">
+            <svg class="contacts-list-svg contacts-list-svg-mail">
+              <use href="./images/sprite.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com </a> 
+          </li>
         
-                <a class="logotype logotype-header" href="./"> <span class="logo-span">Web</span>Studio</a>
-            
-    
-            <ul class="navigation-list lists">
-                <li class="navigation-list-item"><a class="navigation-list-links" href="./index.html"> Студия </a></li>
-                <li class="navigation-list-item before-element-portfolio"><a class="navigation-list-links before-element-link-portfolio" href=""> <span class="navigation-list-link-mark"> Портфолио </span></a></li>
-                <li class="navigation-list-item"><a class="navigation-list-links" href=""> Контакты </a></li>
-            </ul>
-        </nav>
-        <ul class="contacts-list lists">
-            <li class="contacts-list-item"> 
-              <a href="mailto:info@devstudio.com" class="contacts-list-link contacts-list-mail">
-                <svg class="contacts-list-svg" 
-                width="16"
-                height="12">
-                  <use href="./images/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com </a> 
-              </li>
-            
-            <li class="contacts-list-item">
-              <a href="tel:+380961111111" class="contacts-list-link contacts-list-phone">
-                <svg class="contacts-list-svg"
-                width="10"
-                height="16">
-                  <use href="./images/sprite.svg#icon-tell"></use>
-                </svg>
-                +380961111111  </a>
-            </li>
-            
-          </ul>
-        </div>
-        </header>
+        <li class="contacts-list-item">
+          <a href="tel:+380961111111" class="contacts-list-phone">
+            <svg class="contacts-list-svg contacts-list-svg-tel">
+              <use href="./images/sprite.svg#icon-tell"></use>
+            </svg>
+            +380961111111  </a>
+        </li>
+        
+      </ul>
+      <button class="burger-btn" type="button" data-menu-button>
+        <svg class="burger-icon">
+          <use href="./images/sprite.svg#icon-menu_24px"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="mobile-menu-div" data-menu>
+        <button type="button" class="mob-close-btn" data-menu-close>
+          <svg class="mob-close-btn-svg">
+            <use href="./images/sprite.svg#icon-close_24px"></use>
+          </svg>
+        </button>
+      <ul class="mobile-menu-nav lists">
+        <li class="mobile-menu-item"><a href="#" class="mobile-menu-links "> <span class="mobile-menu-studia"> Студия </span></a></li>
+        <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-links">Портфолио</a></li>
+        <li class="mobile-menu-item"><a href="#" class="mobile-menu-links">Контакты</a></li>
+        
+      </ul>
+      <ul class="mobile-menu-cont lists">
+        <li class="mobile-menu-cont-item"><a href="tel:+380961111111" class="mobile-menu-cont-links mobile-menu-cont-links-tel">+380961111111</a></li>
+        <li class="mobile-menu-cont-item"><a href="mailto:info@devstudio.com" class="mobile-menu-cont-links mobile-menu-cont-links-mail">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-munu-social-lists lists">
+        <li class="mob-menu-social-list-item"><a href="#" class="mob-menu-social-list-link">Instagram</a></li>
+        <li class="mob-menu-social-list-item"><a href="#" class="mob-menu-social-list-link">Twitter</a></li>
+        <li class="mob-menu-social-list-item"><a href="#" class="mob-menu-social-list-link">Facebook</a></li>
+        <li class="mob-menu-social-list-item"><a href="#" class="mob-menu-social-list-link">LinkedIn</a></li>
+      </ul>
+    </div>
+    </header>
         <!--BUTTONS SECTION-->
         <main>
         <section class="butn-examplies">
