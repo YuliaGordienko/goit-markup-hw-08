@@ -1,4 +1,4 @@
-.backdrop {
+/*.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@
 .backdrop.is-hidden .modal {
   transform: scale(0.75) translate(-50%, -50%);
 }
-.modal {
+ .modal {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -97,10 +97,7 @@
   display: block;
   position: relative;
 }
-/*.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}*/
+
 
 .modal-form-messege {
   font-size: 14px;
@@ -120,10 +117,7 @@
     border-color: var(--accent-color);
   }
 }
-/*.modal-form-messege:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}*/
+
 
 .modal-form-check-policy:checked + .modal-form-label-policy::before {
   background-color: var(--accent-color);
@@ -159,8 +153,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 12px;
   }
-  .button-submit,
-  .button-submit-foot {
+  .button-submit {
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
