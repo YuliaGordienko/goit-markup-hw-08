@@ -129,3 +129,19 @@
 .our-team-list-item:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .our-team-list-item {
+    width: calc((768px - 60px) / 2);
+    margin: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  .list-our-team {
+    margin: -15px;
+  }
+  .list-our-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

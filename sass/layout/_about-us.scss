@@ -46,15 +46,25 @@
   .about-us-ikon-div {
     background-color: #f5f4fa;
     @include center;
-    max-width: 354px;
-    height: 120px;
   }
-  .wrapper-about-us {
+  .about-us-list {
+    width: calc((768px - 60px) / 2);
+    margin: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  .about-us-ikon {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   .list-about-us-discription {
     max-width: 354px;
+  }
+  .wrapper-about-us {
+    height: 100%;
+    max-height: 251px;
   }
 }
 @media screen and (min-width: 1200px) {

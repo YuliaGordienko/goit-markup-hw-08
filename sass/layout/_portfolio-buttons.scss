@@ -29,7 +29,9 @@
 .butn-list:not(:last-child) {
   margin-right: 8px;
 }
-
+.button-list:nth-last-child(n + 2) {
+  margin-bottom: 15px;
+}
 .butn1 {
   width: 73px;
   height: 38px;
