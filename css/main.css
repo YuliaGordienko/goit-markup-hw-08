@@ -855,15 +855,16 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .list-our-team {
     display: flex;
     flex-wrap: nowrap;
-    margin: -15px;
   }
   .our-team-list-item {
-    width: calc((1200px - 90px) / 3);
-    margin: 15px;
+    width: calc((1200px - 90px) / 4);
+  }
+  .conteiner-position-team {
+    max-width: 270px;
   }
 }
 
