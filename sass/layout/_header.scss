@@ -1,12 +1,3 @@
-.contacts-list {
-  cursor: pointer;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.167;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-}
 .logo-span {
   color: var(--accent-color);
 }
@@ -64,6 +55,7 @@
       fill: var(--accent-color);
     }
   }
+
   .mobile-menu-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -114,6 +106,7 @@
     color: var(--accent-color);
   }
 }
+
 @media screen and (min-width: 768px) {
   .burger-btn {
     display: none;
