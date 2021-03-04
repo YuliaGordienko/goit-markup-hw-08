@@ -97,10 +97,6 @@
   justify-content: center;
 }
 
-.our-team-list-item {
-  min-width: 320px;
-  max-width: 450px;
-}
 .social-list-link {
   @include center;
   width: 44px;
@@ -143,5 +139,16 @@
   .list-our-team {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-our-team {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: -15px;
+  }
+  .our-team-list-item {
+    width: calc((1200px - 90px) / 3);
+    margin: 15px;
   }
 }

@@ -138,3 +138,14 @@
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .list-examples-item {
+    width: calc((768px - 60px) / 2);
+    margin: 15px;
+  }
+  .list-examples {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}

@@ -62,35 +62,19 @@
   .list-about-us-discription {
     max-width: 354px;
   }
-  .wrapper-about-us {
-    height: 100%;
-    max-height: 251px;
-  }
 }
 @media screen and (min-width: 1200px) {
+  .about-us-ikon {
+    display: flex;
+  }
+  .about-us-list {
+    max-width: 270px;
+  }
+  .about-us-ikon-div {
+    min-width: 270px;
+  }
+  .list-about-us-discription {
+    max-width: 270px;
+    min-width: 270px;
+  }
 }
-
-/*.about-us .conteiner {
-  @include align-center;
-}
-.about-us {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.about-us-ikon {
-  display: flex;
-  justify-content: space-between;
-}
-.about-us-ikon-div {
-  @include center;
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.about-us-list:not(:last-child) {
-  margin-right: 30px;
-}*/

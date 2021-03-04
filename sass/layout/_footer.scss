@@ -207,3 +207,21 @@
 .modal-form-input-label-footer {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  .logotypefoot {
+    margin: 0 auto;
+  }
+  .footer-conteiner-form {
+    margin: 0 auto;
+  }
+  .footer {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+}
