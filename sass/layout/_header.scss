@@ -1,4 +1,4 @@
-.logotype {
+.contacts-list {
   cursor: pointer;
   font-family: Raleway;
   font-weight: 700;
@@ -151,6 +151,10 @@
     padding-bottom: 32px;
     padding-top: 32px;
   }
+  .contacts-list-mail,
+  .contacts-list-tel {
+    display: block;
+  }
   .navigation-list-link-mark {
     color: var(--accent-color);
   }
@@ -173,15 +177,6 @@
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: var(--text-color);
-  }
-  .contacts-list-item {
-    &:first-child {
-      margin-top: 21px;
-      margin-bottom: 10px;
-    }
-    &:last-child {
-      margin-bottom: 21px;
-    }
   }
 
   .contacts-list-svg {
@@ -275,15 +270,6 @@
 
   .contacts-list {
     @include center;
-  }
-
-  .navigation-list-links,
-  .contacts-list-mail,
-  .contacts-list-phone,
-  .contacts-portfolio {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 
   .navigation-list-item:not(:last-child) {

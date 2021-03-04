@@ -180,16 +180,16 @@
   .navigation-list-link-mark {
     color: var(--accent-color);
   }
-  .before-element-link::before {
+  .before-element-link-portfolio::before {
     content: "";
     position: absolute;
     bottom: 0;
-    width: 48px;
+    width: 75px;
     height: 4px;
     background-color: #2196f3;
     border-radius: 2px;
   }
-  .before-element {
+  .before-element-portfolio {
     position: relative;
   }
   .contacts-list-mail,

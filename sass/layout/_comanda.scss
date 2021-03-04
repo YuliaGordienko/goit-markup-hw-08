@@ -97,17 +97,23 @@
   justify-content: center;
 }
 
+.social-link-svg {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .social-list-link {
   @include center;
   width: 44px;
   height: 44px;
-  background-color: var(--white-color);
   border-radius: 50%;
-  transition: background-color var(--transition-time) var(--time-function);
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: var(--accent-color);
+    .social-link-svg {
+      fill: var(--white-color);
+    }
   }
 }
 

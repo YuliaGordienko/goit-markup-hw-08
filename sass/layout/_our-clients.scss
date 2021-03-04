@@ -133,10 +133,10 @@
       border-color: var(--accent-color);
     }
   }
+
   .our-clients-list-item {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    margin-top: 0px;
+    margin-bottom: 0px;
     &.our-clients-list-link:hover,
     &.our-clients-list-link:focus {
       fill: var(--accent-color);
