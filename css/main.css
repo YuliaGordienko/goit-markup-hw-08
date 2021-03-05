@@ -197,6 +197,12 @@ img {
     display: flex;
     align-items: center;
   }
+  .mob-menu-social-list-item {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .mob-menu-social-list-link {
+    margin-right: 10px;
+  }
   .mob-menu-social-list-item:not(:last-child) {
     margin-right: 20px;
   }
@@ -250,7 +256,7 @@ img {
     padding-top: 32px;
   }
   .contacts-list-mail,
-  .contacts-list-tel {
+  .contacts-list-phone {
     display: block;
   }
   .navigation-list-link-mark {
