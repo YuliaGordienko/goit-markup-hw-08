@@ -12,11 +12,10 @@
   margin-bottom: 20px;
   color: var(--white-color);
 }
-.button-submit-foot {
-  margin-left: 12px;
-}
+
 .modal-form-input-footer {
-  width: 358px;
+  min-width: 300px;
+  max-width: 480px;
   height: 50px;
   background-color: var(--background-color-grey);
   color: var(--white-color);
@@ -31,4 +30,14 @@
 }
 .button-submit-foot-svg {
   margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .modal-form-input-footer {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-submit-foot {
+    margin-left: 12px;
+  }
 }

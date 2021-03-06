@@ -18,7 +18,7 @@
   letter-spacing: 0.03em;
   color: var(--text-color);
   max-width: 480px;
-  min-width: 320px;
+  min-width: 300px;
 }
 .names-our-team {
   font-weight: 500;
@@ -28,9 +28,7 @@
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.list-about-us-discription {
-  margin-bottom: 30px;
-}
+
 .about-us {
   padding: 60px 0px;
 }
@@ -38,31 +36,36 @@
   background-color: #f5f4fa;
   @include center;
   max-width: 480px;
-  min-width: 320px;
+  min-width: 300px;
   height: 120px;
 }
-
+@media screen and (max-width: 767px) {
+  .about-us-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .about-us-ikon-div {
     background-color: #f5f4fa;
     @include center;
+    max-width: 354px;
+    height: 120px;
   }
   .about-us-list {
     width: calc((768px - 60px) / 2);
     margin: 15px;
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
   }
   .about-us-ikon {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
+
   .list-about-us-discription {
     max-width: 354px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .about-us-ikon {
     display: flex;
