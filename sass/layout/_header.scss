@@ -1,19 +1,18 @@
 .logo-span {
   color: var(--accent-color);
 }
-.header {
-  padding-top: 16px;
-  border-bottom: 1px solid #ececec;
-}
-
 @media screen and (max-width: 767px) {
   .navigation-list,
   .contacts-list {
     display: none;
   }
   .header {
-    padding-bottom: 16px;
+    padding: 16px 0px;
   }
+  .logo-span {
+    color: var(--accent-color);
+  }
+
   .burger-btn,
   .mob-close-btn {
     background-color: transparent;
@@ -22,8 +21,8 @@
   }
   .mob-close-btn {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 15px;
   }
   .burger-icon {
     width: 24px;
@@ -112,18 +111,21 @@
   }
 
   .mob-menu-social-list-item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .mobile-menu-cont-item:first-child {
     margin-bottom: 30px;
   }
 
-  .mobile-menu-studia {
+  .mobile-menu-accent-color {
     color: var(--accent-color);
   }
 }
 
 @media screen and (min-width: 768px) {
+  .navigation .logotype {
+    padding: 26px 0px;
+  }
   .burger-btn {
     display: none;
   }
@@ -137,9 +139,7 @@
   .navigation-list {
     @include align-center;
   }
-  .logotype {
-    margin-right: 88px;
-  }
+
   .navigation-list-item:not(:last-child) {
     margin-right: 50px;
   }
@@ -153,11 +153,8 @@
     letter-spacing: 0.02em;
     color: var(--title-color);
   }
-
-  .navigation-list-links {
-    display: block;
-    padding-bottom: 32px;
-    padding-top: 32px;
+  .contacts-list {
+    padding: 21px 0px;
   }
   .contacts-list-mail,
   .contacts-list-phone {
@@ -201,6 +198,11 @@
     height: 14px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list-item:first-child {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logotype {
     cursor: pointer;
@@ -240,7 +242,14 @@
     fill: var(--text-color);
     margin-right: 10px;
   }
-
+  .contacts-list-svg-mail {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts-list-svg-tel {
+    width: 16px;
+    height: 12px;
+  }
   .navigation-list-links {
     font-weight: 500;
     font-size: 14px;

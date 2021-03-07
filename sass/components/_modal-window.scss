@@ -33,6 +33,7 @@
   border-radius: 4px;
   transform: scale(1) translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
 }
 
 .modal-close-btn {

@@ -7,21 +7,18 @@
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.logo-span {
-  color: var(--accent-color);
-}
-.header {
-  padding-top: 16px;
-  border-bottom: 1px solid #ececec;
-}
 
 @media screen and (max-width: 767px) {
   .navigation-list,
   .contacts-list {
     display: none;
   }
+  .logo-span {
+    color: var(--accent-color);
+  }
   .header {
-    padding-bottom: 16px;
+    padding: 16px 0px;
+    border-bottom: 1px solid #ececec;
   }
   .burger-btn,
   .mob-close-btn {
@@ -31,8 +28,8 @@
   }
   .mob-close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 15px;
   }
   .burger-icon {
     width: 24px;
@@ -104,13 +101,13 @@
     @include align-center;
   }
   .mob-menu-social-list-item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .mobile-menu-cont-item:first-child {
     margin-bottom: 30px;
   }
 
-  .mobile-menu-studia {
+  .mobile-menu-accent-color {
     color: var(--accent-color);
   }
 }
@@ -124,11 +121,12 @@
   .header {
     padding: 0;
   }
+
   .navigation,
   .navigation-list {
     @include align-center;
   }
-  .logotype {
+  .navigation .logotype {
     margin-right: 88px;
   }
   .navigation-list-item:not(:last-child) {
@@ -173,15 +171,6 @@
     letter-spacing: 0.02em;
     color: var(--text-color);
   }
-  .contacts-list-item {
-    &:first-child {
-      margin-top: 21px;
-      margin-bottom: 10px;
-    }
-    &:last-child {
-      margin-bottom: 21px;
-    }
-  }
 
   .contacts-list-svg {
     fill: var(--text-color);
@@ -198,18 +187,23 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts-list {
-    @include center;
-  }
-
   .contacts-list-item:not(:last-child) {
     margin-right: 30px;
   }
-  .contacts-list-item {
-    margin-top: 32px;
+  .contacts-list-svg-mail {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts-list-svg-tel {
+    width: 16px;
+    height: 12px;
   }
   .contacts-list-phone,
   .contacts-list-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
     color: var(--text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus,
