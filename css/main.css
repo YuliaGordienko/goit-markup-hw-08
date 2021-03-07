@@ -171,21 +171,21 @@ img {
   .mobile-menu-links {
     display: block;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.175;
     letter-spacing: 0.02em;
     color: var(--title-color);
   }
   .mobile-menu-cont-links-tel {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.176;
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
   .mobile-menu-cont-links-mail {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: var(--text-color);
@@ -1230,21 +1230,21 @@ img {
   .mobile-menu-links {
     display: block;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.175;
     letter-spacing: 0.02em;
     color: var(--title-color);
   }
   .mobile-menu-cont-links-tel {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.176;
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
   .mobile-menu-cont-links-mail {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: var(--text-color);
