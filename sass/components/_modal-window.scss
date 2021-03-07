@@ -129,6 +129,7 @@
 .modal-form-check-policy:checked + .modal-form-label-policy::before {
   background-color: var(--accent-color);
   background-image: url(../images/iconcheck.svg);
+  background-position: center;
 }
 .modal-form-check-policy:focus + .modal-form-label-policy::before {
   border-color: var(--accent-color);

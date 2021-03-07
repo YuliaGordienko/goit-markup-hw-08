@@ -202,7 +202,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
   }
-  .mob-menu-social-list-item {
+  .mob-menu-social-list-item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   .mob-menu-social-list-link {
@@ -1715,6 +1715,7 @@ img {
 .modal-form-check-policy:checked + .modal-form-label-policy::before {
   background-color: var(--accent-color);
   background-image: url(../images/iconcheck.svg);
+  background-position: center;
 }
 
 .modal-form-check-policy:focus + .modal-form-label-policy::before {
