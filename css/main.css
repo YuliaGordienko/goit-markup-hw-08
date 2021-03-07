@@ -129,6 +129,10 @@ img {
     position: fixed;
     top: 8px;
     right: 15px;
+    cursor: pointer;
+  }
+  .mob-close-btn:hover, .mob-close-btn:focus {
+    color: var(--accent-color);
   }
   .burger-icon {
     width: 24px;
@@ -160,12 +164,6 @@ img {
   .mob-close-btn-svg {
     width: 19px;
     height: 19px;
-  }
-  .mob-close-btn {
-    cursor: pointer;
-  }
-  .mob-close-btn:hover, .mob-close-btn:focus {
-    fill: var(--accent-color);
   }
   .mobile-menu-item:not(:last-child) {
     margin-bottom: 30px;
@@ -1784,10 +1782,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
-    max-height: 581px;
     width: 100%;
     height: 100%;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 

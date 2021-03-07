@@ -23,6 +23,11 @@
     position: fixed;
     top: 8px;
     right: 15px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
   .burger-icon {
     width: 24px;
@@ -54,13 +59,6 @@
   .mob-close-btn-svg {
     width: 19px;
     height: 19px;
-  }
-  .mob-close-btn {
-    cursor: pointer;
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
-    }
   }
 
   .mobile-menu-item:not(:last-child) {
